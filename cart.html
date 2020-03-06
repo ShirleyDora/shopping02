@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>电商-购物车</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<!--[if IE 6]>
+	<script type="text/javascript" src="js/ie6Fixpng.js"></script>
+	<![endif]-->
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript" src="js/active.js"></script>
+	<script type="text/javascript" src="js/xialakuang.js"></script>
+</head>
+<body>
+<div class="headerBar">
+	<div class="topBar">
+		<div class="comWidth">
+			<div class="leftArea">
+				<a href="#" class="collection">收藏慕课</a>
+			</div>
+			<div class="rightArea">
+				欢迎来到慕课网！<a href="denglu.html">[登录]</a><a href="zhuce.html">[免费注册]</a>
+			</div>
+		</div>
+	</div>
+	<div class="logoBar">
+		<div class="comWidth">
+			<div class="logo fl">
+				<a href="#"><img src="images/logo.png" alt="慕课网"></a>
+			</div>
+			<div class="stepBox fr">
+				<div class="step">
+					<ul class="step_text">
+						<li class="s01 step_text_active">我的购物车</li>
+						<li class="s02 step_text_active">填写核对订单</li>
+						<li class="s03">订单提交成功</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="shoppingCart comWidth">
+	<div class="shopping_item">
+		<h3 class="shopping_tit">收货信息</h3>
+		<div class="shopping_cont padding_shop">
+			<ul class="shopping_list">
+				<li><span class="shopping_list_text"><em>*</em>选择地区：</span>
+					<div class="select">
+						<h3>北京市 海淀区 五环内</h3><span></span>
+						<ul class="show_select">
+							<li>一环</li>
+							<li>二环</li>
+							<li>三环</li>
+							<li>四环</li>
+							<li>五环</li>
+						</ul>
+					</div>
+				</li>
+				<li><span class="shopping_list_text"><em>*</em>详细地址：</span><input type="text" placeholder="最多输入20个汉字" class="input input_b"></li>
+				<li><span class="shopping_list_text"><em>*</em>收 货 人：</span><input type="text" placeholder="最多10个汉字" class="input"></li>
+				<li><span class="shopping_list_text"><em>*</em>手&nbsp;&nbsp;机：</span><input type="text" placeholder="如123456789" class="input">
+				<span class="cart_tel">&nbsp;或固定电话：</span><input type="text" placeholder="区号" class="input input_s"><span class="jian">-</span><input type="text" placeholder="电话号码" class="input input_s2"><span class="jian">-</span><input type="text" placeholder="分机号（可选）" class="input input_s2">
+				</li>
+				<li><input type="button" value="确认收货地址" class="affirm"></li>
+			</ul>	
+		</div>	
+	</div>
+	<div class="hr_25"></div>
+	<div class="shopping_item">
+		<h3 class="shopping_tit">支付方式</h3>
+		<div class="shopping_cont padding_shop">
+			<ul class="shopping_list">
+				<li><input type="radio" class="radio" id="r1"><label for="r1">微信支付</label>
+				<p class="shopping_list_tubiao"></p>
+				用微信扫一扫就能支付！
+				</li>
+				<li><input type="radio" class="radio" id="r2"><label for="r2">货到付款</label>
+				<p class="shopping_list_wenzi"></p>送货上门后再付款，使用现金或刷银行卡。
+				</li>
+			</ul>	
+		</div>	
+	</div>
+	<div class="hr_25"></div>
+	<div class="shopping_item">
+		<h3 class="shopping_tit">发票信息</h3>
+		<div class="shopping_cont padding_shop">
+			<ul class="shopping_list">
+				<li><input type="checkbox" id="r3" class="checked"><label for="r3">需要发票</label></li>
+				<li><span class="shopping_list_text"><em>*</em>发票类型：</span>
+					<div class="select">
+						<form action="" method="get">
+						    <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+							    <option value="zhuce.html">商业零售发票</option>
+							    <option value="zhuce.html">目前没时间做</option>
+							    <option value="zhuce.html">零售发票页</option>
+							    <option value="zhuce.html">所以就先跳</option>
+							    <option value="zhuce.html">转到注册页</option>
+							    <option value="zhuce.html">by Shirley</option>
+						    </select>
+						</form>
+					</div>
+				</li>
+				<li><span class="shopping_list_text"><em>*</em>发票抬头：</span>
+					<div class="select">
+						<form action="" method="get">
+						    <select name="jumpMenu" id="jumpMenu" onchange="MM_jumpMenu('parent',this,0)">
+							    <option value="denglu.html">个人</option>
+							    <option value="denglu.html">同理</option>
+							    <option value="denglu.html">跳转</option>
+							    <option value="zhuce.html">登录</option>
+							    <option value="zhuce.html">页面</option>
+						    </select>
+						</form>
+					</div>
+					&nbsp;<input type="text" placeholder="阿斯顿" class="input">
+				</li>
+				<li><input type="button" value="保存" class="affirm_on">
+				&nbsp;<input type="button" value="取消" class="affirm_off">
+				</li>
+			</ul>	
+		</div>	
+	</div>
+	<div class="hr_25"></div>
+	<div class="shopping_item">
+		<h3 class="shopping_tit">送货清单<a href="#" class="backCar">返回购物车修改</a></h3>
+		<div class="shopping_cont pb_10">
+			<div class="cart_inner">
+				<div class="cart_head clearfix">
+					<div class="cart_item t_name">商品名称</div>
+					<div class="cart_item t_price">单价</div>
+					<div class="cart_item t_return">返现</div>
+					<div class="cart_item t_num">数量</div>
+					<div class="cart_item t_subtotal">小计</div>
+				</div>
+				<div class="cart_cont clearfix">
+					<div class="cart_item t_name">
+						<div class="cart_shopInfo clearfix">
+							<img src="images/product48.png" alt="">
+							<div class="cart_shopInfo_cont">
+								<p class="cart_link"><a href="#">Hisense 海信 BCD-202D 202升 三门冰箱 （银色）</a></p>
+								<p class="cart_info">[赠品] 保鲜盒·抽真空保鲜盒 -海信冰洗赠品</p>
+								<p class="cart_info_num">1</p>
+							</div>
+						</div>
+					</div>
+					<div class="cart_item t_price">￥1459.00</div>
+					<div class="cart_item t_return">￥0.00</div>
+					<div class="cart_item t_num">1</div>
+					<div class="cart_item t_subtotal t_red">￥1459.00</div>
+				</div>
+				<div class="cart_message"><a href="#">若您对包裹有特殊要求，请在此留言</a></div>
+				<div class="cart_prompt"><i class="cart_prompt_icon"></i>抱歉，以下商品暂时无法购买，已帮您自动在本次结算中剔除并扣减对应金额，您可先购买其他商品:）</div>
+				<div class="cart_cont cart_no_bor clearfix">
+					<div class="cart_item t_name">
+						<div class="cart_shopInfo clearfix">
+							<img src="images/product49.png" alt="">
+							<div class="cart_shopInfo_cont">
+								<p class="cart_link_info"><a href="#">清风 欧院系列 清香型 100抽3...<br/>数量：1件<br/>￥4.90<span>（无货）</span></a></p>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	<div class="hr_25"></div>
+	<div class="shopping_item">
+		<h3 class="shopping_tit">订单结算</h3>
+		<div class="shopping_cont padding_shop clearfix">
+			<div class="cart_count fr">
+				<div class="cart_rmb">
+					<i>总计：</i><span>￥1459.00</span>
+				</div>
+				<div class="cart_btnBox">
+					<input type="button" value="提交订单" class="cart_btn">
+				</div>
+			</div>
+		</div>	
+	</div>
+</div>
+<div class="hr_25"></div>
+<div class="footer">
+	<p>
+		<a href="#">慕课简介</a><i>|</i>
+		<a href="#">慕课公告</a><i>|</i>
+		<a href="#">招贤纳士</a><i>|</i>
+		<a href="#">联系我们</a><i>|</i>
+		<a href="#">客服热线：400-675-1234</a>
+	</p>
+	<p>Copyright © 2019 &nbsp;Shirley版权所有 &nbsp;&nbsp;京ICP备09037834号 &nbsp;&nbsp;京ICP证B1034-8373号 &nbsp;&nbsp;某市公安局XX分局备案编号：123456789123</p>
+	<p class="web">
+		<a href="#"><img src="images/ad3.png" alt="logo"></a>
+		<a href="#"><img src="images/ad3.png" alt="logo"></a>
+		<a href="#"><img src="images/ad3.png" alt="logo"></a>
+		<a href="#"><img src="images/ad3.png" alt="logo"></a>
+	</p>
+</div>
+</body>
+</html>
